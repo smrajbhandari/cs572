@@ -1,0 +1,30 @@
+### Get all data
+GET http://localhost:3600/api/lectures HTTP/1.1
+
+###
+# Add student
+POST http://localhost:3600/api/lectures HTTP/1.1
+Content-Type: application/json; charset=utf-8
+
+{
+    "course": "MWA",
+    "lecture":"asaad"
+}
+###
+# Delete a student with id
+DELETE http://localhost:3600/api/lectures/1 HTTP/1.1
+###
+# Put 
+PUT http://localhost:3600/api/lectures/1 HTTP/1.1
+Content-Type: application/json; charset=utf-8
+
+{
+    "course": "CS572",
+    "lecture": "saad"
+}
+
+
+###
+# name matches regex
+POST http://localhost:3600/api/lectures/search/saad HTTP/1.1
+Content-Type: application/json; charset=utf-8
