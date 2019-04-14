@@ -16,9 +16,13 @@
     "morgan": "^1.9.1",
     "simple-encryptor": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ./homework_10/js/app.js -o ./homework_10/bundle.js --devtool source-map"
   },
   "repository": {
     "type": "git",
@@ -29,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/smrajbhandari/cs572/issues"
   },
-  "homepage": "https://github.com/smrajbhandari/cs572#readme"
+  "homepage": "https://github.com/smrajbhandari/cs572#readme",
+  "keywords": []
 }
