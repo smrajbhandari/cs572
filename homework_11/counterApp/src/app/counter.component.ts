@@ -10,7 +10,6 @@ export class CounterComponent implements OnInit{
   @Input() counterValue=0;
   @Input() counter:number;
   @Input() ComponentCounterValue:number;
-
   @Output() counterChange:EventEmitter<number>;
   constructor(){
     this.counterChange = new EventEmitter();
